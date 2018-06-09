@@ -9,7 +9,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("This is the portfolio index")
+    return render(request, 'portfolio/index.html')
 
 def bio(request):
-	return HttpResponse("This is the bio page")
+	return render(request, 'portfolio/bio.html')
